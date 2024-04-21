@@ -1,12 +1,15 @@
 <template>
   <div>
-    Some Component
+    Products
   </div>
 </template>
 
 <script>
 export default {
-  name: "Some"
+  name: "Index",
+  mounted() {
+    $(document).trigger('change')
+  }
 }
 </script>
 

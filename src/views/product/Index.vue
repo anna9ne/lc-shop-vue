@@ -304,9 +304,13 @@
                             </div>
                             <div class="products-three-single-content text-center">
                               <span>{{ product.category.title }}</span>
-                              <h5><a href="shop-details-3.html"> {{ product.title }} </a>
+                              <h5>
+                                <router-link :to="{name: 'product.show', params: {id: product.id}}" href="shop-details-3.html"> {{ product.title }} </router-link>
                               </h5>
-                              <p><del>$200.00</del> $ {{ product.price }}</p>
+                              <p>
+                                <del>$200.00</del>
+                                $ {{ product.price }}
+                              </p>
                             </div>
                           </div>
                         </div>
